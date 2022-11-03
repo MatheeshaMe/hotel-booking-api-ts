@@ -1,9 +1,10 @@
-import HotelModel from "../models/hotel.model";
+import HotelModel from '../models/hotel.model';
 import RoomModel from "../models/room.model";
 import { IHotel } from "../interfaces/hotels/IHotels.dto";
 import { IRooms } from "../interfaces/rooms/IRooms.dto";
 
 export const createHotel = async (hotel: IHotel) => {
+    console.log('hotel',{...hotel})
   const newHotel = new HotelModel({...hotel});
   try {
     const savedHotel = await newHotel.save();

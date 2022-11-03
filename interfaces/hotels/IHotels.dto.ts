@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 export interface IHotel {
-  [x: string]: any;
+  // [x: string]: any;
   name: string;
   type: string;
   city: string;
