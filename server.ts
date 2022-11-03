@@ -29,3 +29,5 @@ app.listen(port, () => {
 });
 
 app.use("/api/v1/hotels", hotelRouter);
+
+export default app
