@@ -1,5 +1,6 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 export interface IHotel {
+  [x: string]: any;
   name: string;
   type: string;
   city: string;
@@ -15,7 +16,7 @@ export interface IHotel {
   weLoved?: boolean;
 }
 
-export interface HotelDocument extends IHotel,mongoose.Document{
-    createdAt:Date,
-    updatedAt:Date
+export interface HotelDocument extends IHotel, mongoose.Document {
+  createdAt: Date;
+  updatedAt: Date;
 }
